@@ -3,22 +3,20 @@
  * main - entry point
  *
  * Return: always return 0
-*/
+ */
 int main(void)
 {
-	unsigned char a = '0';
-	int i;
+	int n;
+	char ch;
 
-	for (i = 0; i < 10; i++)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(a);
-		a++;
+		putchar(n);
 	}
-	a = '1';
-	for (i = 0; i < 6; i++)
-		putchar('0' + a);
-		a++;
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
 	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
