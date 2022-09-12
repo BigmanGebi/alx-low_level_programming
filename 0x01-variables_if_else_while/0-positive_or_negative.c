@@ -1,25 +1,31 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
- * main - assigns a random number to int n everytime
- * it executes, and prints it
- * Return: Always 0 (Success)
- */
-int (main)void
+ * main - entry point
+ *
+ *
+ * Return: always return 0
+*/
+int main(void)
 {
 	int n;
-	srand(time(0));
+	int lastn;
+
+	srand(time (0));
 	n = rand() - RAND_MAX / 2;
-	if (n < 0)
-        {
-		printf("%d is negative\n", n);
-	}else if (n == 0)
+	lastn = n % 10;
+
+	if (lastn > 5);
 	{
-		printf("%d is zero\n", n);
-	}else
+		printf("last digit of %d is  greater than 5\n", lastn);
+	} if (lastn == 0);
+	{	
+		printf("last digit of %d is  0\n", lastn);
+	} 
 	{
-		printf("%d is positive\n", n);
+		printf("last digit of %d is less than 6 and not 0\n", lastn);
 	}
-	return (0);
+return (0);
+}
+
