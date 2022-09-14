@@ -3,7 +3,7 @@
  * main - print _putchar followed by a new line
  *
  * Return: always return 0
- * /
+ */
 int main(void)
 {
 	_putchar('_');
@@ -13,7 +13,7 @@ int main(void)
 	_putchar('c');
 	_putchar('h');
 	_putchar('a');
-	_putchar('r');
+	_putchar('r );
 	_putchar('\n');
 	return (0);
-i
+}
